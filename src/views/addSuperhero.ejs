@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Agregar Superhéroe</title>
+    <link rel="stylesheet" href="/form-edit.css">
+</head>
+<body>
+    <h1>Agregar Superhéroe</h1>
+    
+    <form action="/api/heroes/agregar/" method="POST">
+        <label for="nombreSuperHeroe">Nombre del Superhéroe:</label>
+        <input type="text" id="nombreSuperHeroe" name="nombreSuperHeroe" required>
+
+        <label for="nombreReal">Nombre Real:</label>
+        <input type="text" id="nombreReal" name="nombreReal" required>
+
+        <label for="edad">Edad:</label>
+        <input type="number" id="edad" name="edad" min="0" required>
+
+        <label for="planetaOrigen">Planeta de Origen:</label>
+        <input type="text" id="planetaOrigen" name="planetaOrigen"required>
+
+        <label for="debilidad">Debilidad:</label>
+        <input type="text" id="debilidad" name="debilidad"required>
+
+        <label for="poderes">Poderes (separados por coma):</label>
+        <input type="text" id="poderes" name="poderes"required>
+
+        <label for="aliados">Aliados (separados por coma):</label>
+        <input type="text" id="aliados" name="aliados"required>
+
+        <label for="enemigos">Enemigos (separados por coma):</label>
+        <input type="text" id="enemigos" name="enemigos" required>
+
+        <label for="creador">Creador:</label>
+        <input type="text" id="creador" name="creador" required>
+
+        <button type="submit" class="btn">Guardar Superhéroe</button>
+    </form>
+</body>
+</html>
